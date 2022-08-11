@@ -1,1 +1,181 @@
-"Currently in progress" 
+<!DOCTYPE html>
+<html lang="eng">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/styles.css">
+		<title>Ivan Berlin's Portfolio</title>
+		<!-- Think about what link preview stuff you might want and add that in later -->
+	</head>
+
+	<body>
+		<main>
+			<div class="section-flexbox">
+				<!-- ABOUT ME SECTION -->
+				<header>
+					<div class="content-wrapper">
+					
+						<div class="header-image-and-buttons">
+							<img src="images/profile-photo.jpg" alt="A profile photo of myself.">
+							
+							<ul class="social-buttons">
+							<!-- SVGs downloaded from Font Awesome and used under the following license: https://creativecommons.org/licenses/by/4.0/legalcode
+									 Will be credited in the footer-->
+							<!-- Logo faces were originally black but I changed their color to #f5efedff by adding fill="#f5efedff" to the SVG code -->
+								<li> <a class="social-button" href="https://linktr.ee/midnightshadowmusic" target="_blank" aria-label="Listen to my published music"> <img class="fa-icon" src="images/headphones-solid.svg" alt=""></span> </a> </li>
+								<li> <a class="social-button" href="https://midnightshadow.bandcamp.com/" target="_blank" aria-label="Buy my music on Bandcamp"> <img class="fa-icon" src="images/bandcamp-brands.svg" alt=""></span> </a> </li>
+								<li> <a class="social-button" href="https://itch.io/profile/midnightandshadow" target="_blank" aria-label="Play my game jam games on my Itch page"> <img class="fa-icon" src="images/itch-io-brands.svg" alt=""></span> </a> </li>
+								<li> <a class="social-button" href="mailto:ivandberlin@gmail.com" target="_blank" aria-label="Email me at ivan d berlin @gmail.com"> <img class="fa-icon" src="images/envelope-solid.svg" alt=""></span> </a> </li>
+								<li> <a class="social-button" href="https://github.com/MidnightandShadow" target="_blank" aria-label="View my GitHub projects"> <img class="fa-icon" src="images/github-alt-brands.svg" alt=""></span> </a> </li>
+								<li> <a class="social-button" href="https://www.linkedin.com/in/ivanberlin/" target="_blank" aria-label="View my LinkedIn profile"> <img class="fa-icon" src="images/linkedin-in-brands.svg" alt=""></span> </a> </li>
+							</ul>
+							
+							<ul>
+								<li> <a role="link" aria-disabled="true">English (EN)</a> </li>
+								<li> <a href="#">Español (ES)</a> </li>
+							</ul>
+						</div>
+						
+						<div class="header-text">
+							<h1>Ivan Berlin</h1>
+							<h2>Programmer &amp;&amp; Musician</h2>
+							<p>Ivan Berlin is a second-year Computer Science and Cognitive Psychology major at Northeastern University who has a passion for programming, composing music, playing and analyzing videogames, and cats.</p>
+							<p>He is currently exploring how to interweave his wide array of interests by studying - and applying himself to - new programming domains, music genres, music production programs, and game-related software. His witty sense of humor is equally loved and hated by his friends and family.</p>
+						</div>	
+						
+					</div>
+				</header>
+				
+				
+				<!-- PROJECTS SECTION WITH SKILLS & RESUME SIDEBAR -->
+				<div class="content-and-sidebar-wrapper">
+					<!-- Empty left item so that project content can be centered and skills sidebar can be on right (think of this like an invisible left sidebar for fixing spacing) -->
+					<div class ="invisible-left-spacing-sidebar">
+					</div>
+					
+					<!-- PROJECTS SECTION -->
+					<section class="projects">
+						<div class="content-wrapper divider">
+							<h2>Featured Projects</h2>
+							
+							<!-- A single project with an image, a title, a description, and a link or button for more info that leads to project page -->
+							<section class="project">
+								<a href="project-portfolio-website.html"> <img src="images/website-screenshot.png" alt="Screenshot of this website's header."> </a>
+								
+								<div class="project-text">
+									<h3>Portfolio Website</h3>
+									<p>Near the end of my freshman year, I set sight on creating my digital portfolio from scratch. Doing so introduced me to the world of front-end web development: a world I now have a much greater appreciation for. Creating this site has given me first-hand knowledge about that world, and with it, an evolving portfolio that will continue to track my progress as I further explore web dev and other fields.</p>
+									<ul>
+										<li> <a href="project-portfolio-website.html">More project info</a> </li>
+										<li> <a href="https://github.com/MidnightandShadow/MidnightandShadow.github.io" target="_blank">Source code</a> </li>
+									</ul>
+								</div>
+								
+							</section>
+							
+							<!-- A single project with an image, a title, a description, and a link or button for more info that leads to project page -->					
+							<section class="project">
+								<a href="project-game-jams.html"> <img src="images/tarnished-cross-the-fog.jpg" alt="Image of The Tarnished being told to cross the fog to start the hit game of Elden Ring."> </a>
+								
+								<div class="project-text">
+									<h3>Game Jams</h3>
+									<p>During my first year at Northeastern University, I collaborated with fellow students from several nearby universities across four game jams. My role has mainly been to create the music, and occasionally the sound effects, that shape the games by adding an auditory dimension.</p>
+									<a href="project-game-jams.html">More project info</a>
+								</div>
+								
+							</section>
+							
+						</div>
+					</section>
+					
+					<!-- SKILLS & RESUME SECTION -->
+					<div class="divider skills-sidebar-wrapper">
+						<div class="skills-sidebar">
+							<h2>Skills</h2>			
+							
+							<section>
+								<h3>Programming Languages</h3>
+								<p>Java, JavaScript, HTML, CSS, Racket</p>
+							</section>
+							
+							<section>
+								<h3>Programs</h3>
+								<p>Logic Pro X, Google and Microsoft Suites, Premiere Pro, Final Cut Pro X</p>
+							</section>
+							
+							<section>
+								<h3>Miscellaneous</h3>
+								<p>Native English & Spanish Speaker</p>
+								<p>Black Belt in MMA</p>
+							</section>
+							
+							<a href="resume.pdf" target="_blank">View Resume</a>
+						</div>
+					</div>
+				</div>
+				
+				
+				<!-- WORK EXPERIENCE SECTION -->
+				<section class="work-experience">
+					<div class="content-wrapper info-formatting divider">
+						<h2>Work Experience</h2>
+						
+						<div class="job">
+						
+							<div class="job-details">
+
+								<h3>Peer Tutoring</h3>
+								<p>Northeastern University Peer Tutoring Program</p>
+								<p>05/20/2022 - 06/28/2022</p>
+							</div>
+							
+							<div class="job-summary">
+								<p>I worked as a Peer Tutor at Northeastern University for <i>Fundamentals of Computer Science 2</i> and <i>Music in Everyday Life</i>. As a peer tutor, I aimed to guide other students through the thought processes and insights I have acquired while taking these courses so that they could better develop their programming, comprehension, and music-related skills.</p>
+							</div>
+							
+						</div>
+						
+					</div>
+				</section>
+				
+				
+				<!-- EDUCATION SECTION -->
+				<section class="education">
+					<div class="content-wrapper info-formatting">
+						<h2>Education</h2>
+						
+						<!-- A single school/education entry with school/institution name, degree/certificate and time attended info, a GPA or other similar metric, and any additional award-related info -->
+						<section>
+							<h3>Northeastern University - Boston, MA</h3>
+							<p>Bachelor of Science in CS + Cognitive Psychology, 2021 - 2025</p>
+							<p>GPA: 3.963 / 4.0</p>
+							<p>Khoury College Dean's List Student for Fall 2021, Spring 2022</p>
+						</section>
+
+						<section>
+							<h3 aria-label="Mast @ F I U, North Miami Beach, Florida">MAST @ FIU - NMB, FL</h3>
+							<p> High School Diploma, 2017 - 2021</p>
+							<p>Unweighted GPA: 4.0 / 4.0</p>
+							<p>Graduated Magna Cum Laude</p>
+						</section>
+					
+					</div>
+				</section>
+				
+				
+				<!-- FOOTER SECTION -->
+				<footer>
+					<div class="content-wrapper">
+						<h2>Where to Reach Me</h2>
+						<p>Please feel free to contact me at <a href="mailto:ivandberlin@gmail.com" aria-label="ivan d berlin @gmail.com">ivandberlin@gmail.com</a></p>
+						<p>If you're in the Boston area, I'm more than happy to meet in person any time between 09/2022 ~ 12/2022.</p>
+						<hr>
+						<small>The social button logo SVGs were downloaded from <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> and used under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank">CC BY 4.0 License.</a> </small>
+					</div>
+				</footer>
+			</div>
+		</main>
+	</body>
+
+</html>

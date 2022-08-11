@@ -1,0 +1,465 @@
+/*
+Color palette:
+--in hex with alpha pair at end
+--jet: #363636ff;
+--gunmetal: #242f40ff;
+--shadow-blue: #748cabff;
+--celeste: #a8f9ffff;
+--isabelline: #f5efedff;
+--caribbean-green: #02ca8bff;
+--medium-sea-green: #00be7fff;
+*/
+
+/* Miscellaneous */
+/* For body */
+@font-face {
+	font-family: 'Playfair Display';
+	src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+/* For h1 and h2 */
+@font-face {
+	font-family: 'XanhMono-Italic';
+	src: url(../fonts/XanhMono-Italic.ttf);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0.875rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+
+/* Global */
+.content-wrapper {
+	max-width: 800px;
+	width: 85%;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #748cabff;
+font-family: 'Playfair Display', serif;
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+h1, h2 {
+	font-family: XanhMono-Italic;
+}
+
+header h1, header h2 {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 3rem;
+	line-height: 2.5rem;
+}
+
+h2 {
+	margin: 0;
+	font-size: 2rem;
+}
+
+img {
+	width: 300px
+}
+
+a {
+	color: #02ca8bff;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h3 {
+	margin-bottom: 0.5rem;
+}
+
+h4 {
+	margin-bottom:0.3rem;
+	font-size: 1.3rem;
+}
+
+.info-formatting h3 + p {
+	font-style: italic;
+}
+
+.info-formatting h3 ~ p {
+	margin: 0.5rem 0;
+}
+
+/* This targets the sections within divider, which are the individual "project" subsections and the individual "job" subsections in "Projects" and "Work Experience" respectively */
+.divider > section {
+	border-bottom: 1px dashed #242f40ff;
+	padding: 25px 0;
+}
+
+.divider > section:last-of-type {
+	border-bottom: none;
+}
+
+/* A version of the divider styling modified for the "Skills" sidebar */
+.divider .skills-sidebar > section {
+		border-bottom: 1px dashed #f5efedff;
+}
+
+/* Header */
+header {
+	background-color: #363636ff;
+	color: #f5efedff;
+	text-align: center;
+}
+
+header .content-wrapper {
+	display: flex;
+	gap: 100px;
+	align-items: center;
+}
+
+header img {
+	max-width: 300px;
+}
+
+/* Social Buttons and Language Links in Header*/
+
+header ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-right: 0;
+}
+
+/* Parent */
+.social-buttons {
+	display: flex;
+	max-width: 300px;
+	justify-content: center;
+}
+
+/* Each Button */
+.social-button {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: #242f40ff;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+	margin: 3px;
+}
+
+/* Logos (SVGs) in Buttons */
+.fa-icon {
+	width: 20px;
+	size: 20px;
+	margin: 5px;
+}
+
+/* Projects */
+.projects {
+	background-color: #f5efedff;
+}
+
+.projects h2 {
+	margin-bottom: 20px;
+}
+
+.project {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+.project img {
+	display: block;
+}
+
+.project ul {
+	list-style: circle;
+	padding-left: 20px;
+}
+
+.centered-ul {
+	list-style: circle;
+	display: inline-block;
+	padding-left: 0;
+	margin: 0;
+}
+
+.project li {
+	margin-bottom: 5px;
+}
+
+/* Work Experience */
+.work-experience {
+	color: #363636ff;
+	background-color: #a8f9ffff;
+}
+
+.work-experience h2 {
+	padding-bottom: 10px;
+	border-bottom: 1px #363636ff dashed;
+	margin-bottom: 10px;
+}
+
+.work-experience .job {
+	display: flex;
+	gap: 2rem;
+	/* justify-content: space-between; */
+}
+
+.job-details {
+	flex-shrink: .5;
+}
+
+/* Education */
+.education {
+	background-image: url(../images/pen-and-pencil-on-desk-1920x1080-compressed.jpg);
+	background-size: cover;
+	background-position: center 10%;
+	padding-bottom: 100px;
+}
+
+.education h2, .education h3, .education p {
+	color: #363636ff; /* jet */
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0.125rem 0.125rem #f5efedff;
+}
+
+.education h2 {
+	font-size: 2.5rem;
+}
+
+.education h3 {
+	font-size: 2rem;
+	margin: 4rem 0 2rem;
+}
+
+.education p {
+	font-size: 1.5rem;
+}
+
+.education section {
+	padding-bottom: 25px;
+}
+
+footer {
+	background-color: #242f40ff;
+}
+
+footer h2 {
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #f5efedff;
+	margin-bottom: 30px;
+}
+
+footer hr {
+	margin-top: 30px;
+}
+
+/* For the more project info pages */
+.more-project-info {
+	background-color: #242f40ff;
+	flex-grow: 1;
+}
+
+section.more-project-info .content-wrapper {
+	color: #f5efedff;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.more-project-info ul {
+	text-align: left;
+	margin: 0 auto;
+	list-style: circle;
+	list-style-position: inside;
+	line-height: 2.5;
+}
+
+/* These next two selectors fill in white space at bottom */
+.more-project-info-body {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	height: 100vh;
+}
+
+.more-project-info-main {
+	background-color: #242f40ff;
+flex-grow: 1;
+}
+
+/* Responsive Styling */
+@media screen and (min-width: 1920px) {
+	/* Skills & Resume when sidebar format fits */
+
+	/* aside .content-wrapper { */
+		/* top-padding = bottom-padding = ( (Height of Projects Section - Height of Sidebar) / 2) */
+		/* padding: 151.21px 0; */
+		/* max-width: 100%; */
+		/* width: 98%; */
+		/* display: flex; */
+		/* justify-content: flex-end; */
+		/* position: absolute; */
+		/* pointer-events: none; */
+	/* } */
+	
+	.content-and-sidebar-wrapper {
+		display: flex;
+		background-color: #f5efedff;
+    align-items: center;
+	}
+	
+	.invisible-left-spacing-sidebar {
+		width: 400px;
+		margin: auto;
+	}
+	
+	.projects {
+		flex-grow: 0.3;
+	}
+	
+	.skills-sidebar-wrapper {
+		margin: auto;
+	}
+
+	.skills-sidebar {
+		width: 400px;
+		height: 550px;
+		background-color: #363636ff;
+		text-align: center;
+		}
+
+	.skills-sidebar h2 {
+		border-bottom: 2px double #f5efedff;
+		}
+
+	.skills-sidebar a {
+		pointer-events: all;
+		}
+		
+		
+	.skills-sidebar > section:last-of-type {
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 1919px) {
+	/* Skills & Resume when sidebar format doesn't fit */
+	.skills-sidebar-wrapper {
+		background-color: #363636ff;
+	}
+	
+	.skills-sidebar {
+		text-align: center;
+		max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+	}
+		
+	.skills-sidebar h2 {
+		border-bottom: 2px double #f5efedff;
+		padding-bottom: 10px;
+	}
+	
+	.skills-sidebar > section:last-of-type {
+		margin-bottom: 50px;
+	}
+		
+	.section-flexbox {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	header {
+		order: 1;
+	}
+	
+	.content-and-sidebar-wrapper {
+		order: 2;
+	}
+	
+	section.work-experience {
+		order: 3;
+	}
+	
+	section.education {
+		order: 4;
+	}
+	
+	footer {
+		order: 5;
+	}
+}
+
+@media screen and (max-width: 949px) {
+	html {
+		font-size: 0.875rem;
+		text-align: center;
+	}
+	
+	ul {
+		list-style: circle;
+		display: inline-block;
+		padding-left: 0;
+		margin: 0;
+	}
+	
+	h1 {
+		line-height: 0.8;
+	}
+	
+	h2 {
+		line-height: 1;
+	}
+	
+	header .content-wrapper {
+		flex-direction: column;
+		gap: 20px;
+	}
+	
+	header h1 {
+		line-height: 3.5rem;
+	}
+	
+		header h2 {
+		line-height: 3rem;
+	}
+	
+	.projects .project, .work-experience .job {
+		flex-direction: column;
+	}
+	
+	.work-experience .job p:last-of-type {
+		margin: 0;
+	}
+}
