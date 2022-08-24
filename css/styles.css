@@ -246,10 +246,10 @@ header ul {
 }
 
 .education h2, .education h3, .education p {
-	color: #363636ff; /* jet */
+	color: #242f40ff; /* gunmetal */
 	font-weight: bold;
 	text-align: center;
-	text-shadow: 0.125rem 0.125rem #f5efedff;
+	text-shadow: 0.11rem 0.11rem #e5e756ff;
 }
 
 .education h2 {
@@ -259,6 +259,7 @@ header ul {
 .education h3 {
 	font-size: 2rem;
 	margin: 4rem 0 2rem;
+	text-shadow: 0.1rem 0.09rem #e5e756ff;
 }
 
 .education p {
