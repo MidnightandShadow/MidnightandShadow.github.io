@@ -239,17 +239,17 @@ header ul {
 
 /* Education */
 .education {
-	background-image: url(../images/pen-and-pencil-on-desk-1920x1080-compressed.jpg);
+	background-image: url(../images/pen-and-pencil-on-desk-1920x1080-compressed-alt-2.jpg);
 	background-size: cover;
 	background-position: center 10%;
 	padding-bottom: 100px;
 }
 
 .education h2, .education h3, .education p {
-	color: #242f40ff; /* gunmetal */
+	color: #f5efedff; /* gunmetal */
 	font-weight: bold;
 	text-align: center;
-	text-shadow: 0.11rem 0.11rem #e5e756ff;
+	text-shadow: 0.15rem 0.15rem #000000ff;
 }
 
 .education h2 {
@@ -259,7 +259,6 @@ header ul {
 .education h3 {
 	font-size: 2rem;
 	margin: 4rem 0 2rem;
-	text-shadow: 0.1rem 0.09rem #e5e756ff;
 }
 
 .education p {
