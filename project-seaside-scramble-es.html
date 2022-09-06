@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/styles.css">
+		<title>El Portafolio de Ivan Berlin - Seaside Scramble</title>
+		<!-- Think about what link preview stuff you might want and add that in later -->
+	</head>
+
+	<body class="more-project-info-body">
+		<main class="more-project-info-main">
+		<!-- ABOUT ME SECTION -->
+			<header>
+				<div class="content-wrapper">
+				
+					<div class="header-image-and-buttons">
+						<img src="images/profile-photo.jpg" alt="Mi foto de perfil.">
+						
+						<ul class="social-buttons">
+						<!-- SVGs downloaded from Font Awesome and used under the following license: https://creativecommons.org/licenses/by/4.0/ 
+						     Will be credited in the footer-->
+							<li> <a class="social-button" href="https://linktr.ee/midnightshadowmusic" target="_blank" aria-label="Escuche mi música publicada"> <img class="fa-icon" src="images/headphones-solid.svg" alt=""></span> </a> </li>
+							<li> <a class="social-button" href="https://midnightshadow.bandcamp.com/" target="_blank" aria-label="Compre mi música en Bandcamp"> <img class="fa-icon" src="images/bandcamp-brands.svg" alt=""></span> </a> </li>
+							<li> <a class="social-button" href="https://itch.io/profile/midnightandshadow" target="_blank" aria-label="Juege mis juegos de ‘game jams’ en Itch"> <img class="fa-icon" src="images/itch-io-brands.svg" alt=""></span> </a> </li>
+							<li> <a class="social-button" href="mailto:ivandberlin@gmail.com" target="_blank" aria-label="Contáctame por ivan d berlin @gmail.com"> <img class="fa-icon" src="images/envelope-solid.svg" alt=""></span> </a> </li>
+							<li> <a class="social-button" href="https://github.com/MidnightandShadow" target="_blank" aria-label="Mire mis proyectos en GitHub"> <img class="fa-icon" src="images/github-alt-brands.svg" alt=""></span> </a> </li>
+							<li> <a class="social-button" href="https://www.linkedin.com/in/ivanberlin/" target="_blank" aria-label="Mire mi perfil de LinkedIn"> <img class="fa-icon" src="images/linkedin-in-brands.svg" alt=""></span> </a> </li>
+						</ul>
+						
+						<ul>
+							<li> <a href="project-seaside-scramble.html">English (EN)</a> </li>
+							<li> <a role="link" aria-disabled="true">Español (ES)</a> </li>
+						</ul>
+						
+						<a href="index-es.html">Vuelva a la página inicial</a>
+					</div>
+					
+					<div class="header-text">
+						<h1>Ivan Berlin</h1>
+						<h2>Programador &amp;&amp; Músico</h2>
+						<p>Ivan Berlin es un estudiante de segundo año estudiando Ciencias de La Computación y Psicología Cognitiva en Northeastern University. Él tiene pasión por programar, componer música, jugar y analizar videojuegos, y por los gatos.</p>
+						<p>Ahora está explorando como mezclar sus intereses eclécticos por estudiar - y aplicarse a - nuevos tipos de programación, géneros de música, programas de componer música, y programas de videojuegos. Sus amigos y familia aman y odian su humor ingenioso por igual.</p>
+					</div>	
+					
+				</div>
+			</header>
+			
+			
+		<!-- PROJECT BREAKDOWN SECTION -->
+			<section class="more-project-info">
+				<div class="content-wrapper">
+					<h2>Seaside Scramble</h2>
+					<h3>Sumario del Proyecto</h3>
+					<p> <cite>‘Seaside Scramble’</cite> (Batalla Marítima) es un videojuego de tácticas por turnos basado en territorio en vez de combate tradicional. Mandas “gatos terrestres” quien pelean contra criaturas marítimas. Necesitas asegurar más cuadrados de arena que las criaturas puedan asegurar cuadrados de agua. Cada vez que mueves uno de tus gatos, se propagan arena sobre su área. Su movimiento esta limitado por el terreno dicotómico del campo de batalla. A los gatos no les gusta nadar, y como las criaturas tampoco pueden caminar por la arena, el ganador de la batalla es cualquiera que ocupe más terreno antes del fin del último turno.</p>
+					<h3>Responsabilidad(es)</h3>
+					<p>Compuse la música y también diseñé los efectos de sonido, pero solo pude incluir los efectos en la primera versión del juego después del ‘jam’. Sin embrago, durante este ‘jam’ fue la primera vez que avancé en mis esfuerzos a combinar mis pasiones de música y programación. Integré la música yo mismo usando los programas ‘Wwise’ y ‘Unity’. Recientemente terminé los cursos 101, 201, y 301 de Wwise, así que podría aumentar funciones reactivas a mi música en Wwise y programar los componentes integrativos y necesarios en Unity. Además, el programador principal no estaba totalmente disponible hacia el fin del ‘jam’, así que también asumí las responsabilidades de probar, arreglar, y compilar el video juego.</p>
+					<h3>Lo Que Aprendí</h3>
+					<p>Durante este ‘jam’ fue la primera vez que usé mis nuevas habilidades de implementación auditiva. Aprendí mucho en cada etapa del proceso. Descubrí que ‘Logic Pro’ no puede exportar muchos fragmentos de midi individuales a fragmentos de audio individuales con los propios efectos aplicados. Así mismo, aprendí como acelerar este proceso monótono. Adicionalmente, descubrí como implementar un sistema similar al ‘sequence step’ de Wwise, pero que también podría efectivamente cancelar el efecto de repetir un segmento al azar en el ‘Music Playlist Container’. Además, había algunas diferencias importantes entre el código del juego en el curso 301 de Wwise y en el código de nuestro juego; entonces, tuve que aprender más detalles sobre Unity y programar para Unity en C#. Por ejemplo, el parámetro de “porciento tierra” no era estático, así que tuve que programar una función para mandar la propia información a Wwise en un modo diferente que el curso 301 te enseña.</p> 
+					<p>Lo que puedo abstraer de esta lección es que este ‘jam’ me confirmó que he de probar nuevas técnicas – aunque estén dentro de un área que ya he empezado a explorar – y encontré unos problemas impredecibles para resolver. Sin soluciones ni recursos y sin previa experiencia, encontrar las soluciones adecuadas me tomó mucho más tiempo de lo que pensaba. Entonces, seria mejor si tomara esto en cuenta. Por eso, tuve que acortar mis metas para este jam, y tristemente el resultado final no disfruta de los efectos de sonido como en la versión original.</p>
+				</div>
+			</section>
+			
+			<!-- FOOTER SECTION -->
+			<footer>
+				<div class="content-wrapper">
+					<hr>
+					<small>Los SVGs de los botones de las redes sociales fueron descargados de <a href="https://fontawesome.com/" target="_blank">‘Font Awesome’</a> y usado dentro del terma de la <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode.es" target="_blank">Licencia Atribución/Reconocimiento 4.0 Internacional.</a> </small>
+				</div>
+			</footer>			
+		</main>
+	</body>
+	
+</html>
