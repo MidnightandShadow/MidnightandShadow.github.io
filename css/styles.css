@@ -408,11 +408,11 @@ flex-grow: 1;
 		order: 2;
 	}
 	
-	section.work-experience {
+	section.education {
 		order: 3;
 	}
 	
-	section.education {
+	section.work-experience {
 		order: 4;
 	}
 	
